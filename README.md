@@ -18,10 +18,10 @@ A simple repo where I'll be adding useful and interesting CSS animations 🧐.
 
 ### Prerequisites
 
-Learn HTML and CSS in order to understand the code.
+Learn HTML and CSS in order to understand the code of this project.
 
 ```
-  Checking MDN for animations' content would can be useful.
+  Checking MDN's content for animations' can be useful.
 ```
 
 ## Directory Structure
