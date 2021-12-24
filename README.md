@@ -55,7 +55,7 @@ Good and reliable vanilla HTML and CSS.
 
 ## Live site
 
-Check this beauty 😂 on [simplecssanimations](https://simple-css-animations.vercel.app).
+Check this beauty 😂 on [simple-css-animations](https://simple-css-animations.vercel.app).
 
 ## Contributing
 
