@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCSSA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Simple CSS Animations</h1>
+
+    <div class="container">
+      <div class="animation first-animation">
+        <div class="first-animation__base"></div>
+      </div>
+  
+      <div class="animation second-animation">
+        <div class="second-animation__outer-arc">
+          <div class="second-animation__inner-arc">
+            <div class="second-animation__circle">
+              <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                <path d="M0 0h24v24H0V0z" fill="none"/>
+                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="animation third-animation">
+        <div class="third-animation__outer-arc">
+          <div class="third-animation__inner-arc">
+            <div class="third-animation__circle">
+              <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                <path id="top" d="M0 0h24v24H0V0z" fill="none"/>
+                <path id="bottom" d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 
+                1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 
+                2.69-6 6-6zm6.76 1.74 L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69
+                6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="animation fourth-animation">
+        <div class="fourth-animation__bigger-circle"></div>
+          <div class="fourth-animation__icon">
+            <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+              <path d="M0 0h24v24H0V0z" fill="none"/>
+              <circle cx="12" cy="19" r="2"/>
+              <path d="M12 3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2s2-.9
+              2-2V5c0-1.1-.9-2-2-2z"/>
+            </svg>
+          </div>
+          <div class="fourth-animation__smaller-circle"></div>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
