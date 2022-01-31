@@ -7,7 +7,7 @@
   <title>SCSSA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Recursive&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="ashortcut lternate icon" href="/favicon.ico">
   <meta name="theme-color" content="#FDFFFC">
 
@@ -95,8 +95,8 @@
 
     <ul class="animation-list__list">
       <li>
-        <div class="animation">
-          <div class="first-animation"></div>
+        <div class="animation" id="first">
+          <div class="first-animation paused-animation"></div>
         </div>
 
         <details>
@@ -155,11 +155,11 @@
       </li>
 
       <li>
-        <div class="animation">
-          <div class="second-animation__outer-arc">
-            <div class="second-animation__inner-arc">
-              <div class="second-animation__circle">
-                <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+        <div class="animation" id="second">
+          <div class="second-animation__outer-arc paused-animation">
+            <div class="second-animation__inner-arc paused-animation">
+              <div class="second-animation__circle paused-animation">
+                <svg class="paused-animation" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                   <path d="M0 0h24v24H0V0z" fill="none"/>
                   <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
                 </svg>
@@ -253,11 +253,11 @@
       </li>
 
       <li>
-        <div class="animation">
-          <div class="third-animation__outer-arc">
-            <div class="third-animation__inner-arc">
-              <div class="third-animation__circle">
-                <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+        <div class="animation" id="third">
+          <div class="third-animation__outer-arc paused-animation">
+            <div class="third-animation__inner-arc paused-animation">
+              <div class="third-animation__circle paused-animation">
+                <svg class="paused-animation" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                   <path id="top" d="M0 0h24v24H0V0z" fill="none"/>
                   <path id="bottom" d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 
                   1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 
@@ -359,9 +359,9 @@
       </li>
 
       <li>
-        <div class="animation">
-          <div class="fourth-animation__bigger-circle"></div>
-            <div class="fourth-animation__icon">
+        <div class="animation" id="fourth">
+          <div class="fourth-animation__bigger-circle paused-animation"></div>
+            <div class="fourth-animation__icon paused-animation">
               <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                 <path d="M0 0h24v24H0V0z" fill="none"/>
                 <circle cx="12" cy="19" r="2"/>
@@ -369,7 +369,7 @@
                 2-2V5c0-1.1-.9-2-2-2z"/>
               </svg>
             </div>
-            <div class="fourth-animation__smaller-circle"></div>
+            <div class="fourth-animation__smaller-circle paused-animation"></div>
         </div>
       </div>
 
@@ -467,6 +467,7 @@
     </ul>
   </section>
 
-  <script src="/prism.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/prism.js"></script>
 </body>
 </html>
