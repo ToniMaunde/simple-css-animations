@@ -15,3 +15,6 @@ const animationObserver = new IntersectionObserver((entries) => {
 });
 
 animations.forEach(animation => animationObserver.observe(animation));
+
+const currentYear = new Date().getFullYear();
+document.querySelector(".current-year").innerHTML = currentYear;
