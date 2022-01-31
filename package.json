@@ -371,7 +371,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --output public"
   },
   "repository": {
     "type": "git",
