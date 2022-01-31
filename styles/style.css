@@ -65,6 +65,10 @@ pre[class*=language-] {
   background-color: var(--clr-primary);
 }
 
+code[class*=language-] {
+  font-family: "Recursive";
+}
+
 /*  Layout */
 .container {
   width: 100%;
@@ -411,4 +415,8 @@ pre[class*=language-] {
 .fourth-animation__icon svg {
   margin: auto;
   fill: #fff;
+}
+
+.paused-animation {
+  animation-play-state: paused !important;
 }
