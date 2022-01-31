@@ -45,6 +45,11 @@ main {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 ul {
@@ -105,6 +110,29 @@ code[class*=language-] {
   display: block;
   width: 28px;
   height: 28px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--page-padding);
+  background-color: var(--clr-primary);
+}
+
+.footer section {
+  margin-bottom: 1.4rem;
+}
+
+.footer p {
+  color: var(--clr-background);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.footer a {
+  color: var(--clr-tertiary);
+  font-size: 1rem;
 }
 
 .hero {
@@ -184,6 +212,10 @@ code[class*=language-] {
 
 .animation-list__list li {
   margin-bottom: 3rem;
+}
+
+.animation-list__list > li:nth-child(4) {
+  margin-bottom: 0;
 }
 
 .code {
@@ -366,7 +398,7 @@ code[class*=language-] {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background-color: rgba(255, 0, 0, 0.10);
+  background-color: rgba(255, 0, 0, 0.2);
   animation: fourthAnimationBiggerCircle 2s linear infinite;
 }
 
@@ -383,7 +415,7 @@ code[class*=language-] {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: rgba(255, 0, 0, 0.10);
+  background-color: rgba(255, 0, 0, 0.3);
   animation: fourthAnimationSmallerCircle 2s linear infinite;
 }
 
@@ -401,15 +433,15 @@ code[class*=language-] {
   display: flex;
   width: 2rem;
   height: 2rem;
-  background-color: rgba(255, 0, 0, 0.7);
+  background-color: rgba(255, 0, 0, 0.9);
   border-radius: 50%;
   z-index: 2;
   animation: fourthAnimationIcon 1s linear infinite;
 }
 
 @keyframes fourthAnimationIcon {
-  0%{ background-color: rgba(255, 0, 0, 0.2);}
-  100%{ background-color: rgba(255, 0, 0, 0.7);}
+  0%{ background-color: rgba(255, 0, 0, 0.4);}
+  100%{ background-color: rgba(255, 0, 0, 0.9);}
 }
 
 .fourth-animation__icon svg {
