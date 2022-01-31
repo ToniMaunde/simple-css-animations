@@ -25,16 +25,22 @@ Learn HTML and CSS in order to understand the code of this project.
 ```
 
 ## Directory Structure
+
 ```
-.
 ├── assets
-│   ├── ...
-│   └── ...
+│   ├── check_circle_black_24dp.svg
+│   ├── fingerprint_black_24dp.svg
+│   ├── github_logo.png
+│   └── scssa.png
+├── js
+│   ├── index.js
+│   └── prism.js
+├── styles
+│   ├── prism.css
+│   └── style.css
 ├── favicon.ico
-├── favicon.svg
 ├── index.html
 ├── README.md
-├── style.css
 ```
 
 ## Coding style
@@ -51,6 +57,7 @@ Links for this tools
 Good and reliable vanilla HTML and CSS.
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 
 ## Live site
