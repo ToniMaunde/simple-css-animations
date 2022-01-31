@@ -243,7 +243,7 @@ code[class*=language-] {
   height: 5rem;
   border-radius: 50%;
   border: 1rem solid rgba(142, 69, 133, 0.55);
-  border-left-color: papayawhip;
+  border-left-color: var(--clr-background);
   animation: firstAnimation 1s linear infinite;
 }
 
