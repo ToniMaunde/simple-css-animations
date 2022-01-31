@@ -124,6 +124,15 @@ code[class*=language-] {
   margin-bottom: 1.4rem;
 }
 
+.footer section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer section:nth-child(2) a {
+  width: fit-content;
+}
+
 .footer p {
   color: var(--clr-background);
   font-size: 1.125rem;
