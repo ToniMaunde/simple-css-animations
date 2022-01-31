@@ -7,67 +7,462 @@
   <title>SCSSA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="alternate icon" href="/favicon.ico">
-  <meta name="theme-color" content="#ffefd5">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="ashortcut lternate icon" href="/favicon.ico">
+  <meta name="theme-color" content="#FDFFFC">
 
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/styles/prism.css">
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-  <main>
-    <h1>Simple CSS Animations</h1>
+  <nav class="navbar">
+    <p>simple css animations</p>
+    <a href="https://github.com/ToniMaunde/simple-css-animations" referrerpolicy="no-referrer">github</a>
+    <img src="./assets//github_logo.png" alt="github logo">
+  </nav>
 
-    <div class="container">
-      <h4 class="section-title"># Loaders and indicators</h4>
-
-      <div class="animation first-animation">
-        <div class="first-animation__base"></div>
-      </div>
+  <section class="hero">
+    <h1 class="hero__heading">
+      Simple, lean and performant CSS animations
+    </h1>
   
-      <div class="animation second-animation">
-        <div class="second-animation__outer-arc">
-          <div class="second-animation__inner-arc">
-            <div class="second-animation__circle">
+    <h2 class="hero__supporting-text">A repository for sharing pure CSS Animations</h2>
+  
+    <a role="button" href="#animations" class="hero__call-to-action">
+      View Animations
+    </a>
+  </section>
+
+  <section class="section">
+    <h3 class="section__title">
+      <span class="left-curly-brace">
+        {
+      </span>
+      Quick introduction
+      <span class="right-curly-brace">
+        }
+      </span>
+    </h3>
+
+    <p class="section__content">
+      I decided to create this open source project to share the CSS animations
+      that I’ve learned and catalogue, in a way, my learning experience hoping
+      that it might benefit someone else.
+    </p>
+  </section>
+
+  <section class="section">
+    <h3 class="section__title">
+      <span class="left-curly-brace">
+        {
+      </span>
+      The gist of it
+      <span class="right-curly-brace">
+        }
+      </span>
+    </h3>
+
+    <p class="section__content">
+      Down below you’ll find the available CSS animations alongside the markup 
+      (HTML) and styling (CSS). These can be easily copied and altered to suit 
+      your needs. More details on the structure of the code can be found 
+      on the repository of this project on 
+      <a href="https://github.com/ToniMaunde/simple-css-animations" 
+        referrerpolicy="no-referrer">
+        GitHub
+      </a>.
+    </p>
+  </section>
+
+  <section class="section animation-list">
+    <h3 class="section__title">
+      <span class="left-curly-brace">
+        {
+      </span>
+      The CSS Animations
+      <span class="right-curly-brace">
+        }
+      </span>
+    </h3>
+
+    <p class="section__content">
+      Finally, here they are. I hope you can find it useful.
+    </p>
+
+    <ul class="animation-list__list">
+      <li>
+        <div class="animation">
+          <div class="first-animation"></div>
+        </div>
+
+        <details>
+          <summary>Code for the first animation</summary>
+          <div class="code">
+            <span class="code__label">
+              <span role="note" class="code__note html">HTML</span>
+              <button>COPY</button>
+            </span>
+<pre>
+<code class="language-html">&lt;div class="animation"&gt;
+  &lt;div class="first-animation__base"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+          </div>
+          <div class="code">
+            <span class="code__label">
+              <span role="note" class="code__note css">CSS</span>
+              <button>COPY</button>
+            </span>
+<pre>
+<code class="language-css">.animation {
+  display: flex;
+  width: 8rem;
+  height: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 1rem white);
+  background-color: var(--clr-primary);
+}
+
+.first-animation {
+  margin: auto;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1rem solid var(--clr-quaternary);
+  border-left-color: papayawhip;
+  animation: firstAnimation 1s linear infinite;
+}
+
+@keyframes firstAnimation {
+  0%{ transform: rotate(0deg);}
+  25%{ transform: rotate(90deg);}
+  50%{ transform: rotate(180deg);}
+  75%{ transform: rotate(270deg);}
+  100%{ transform: rotate(360deg);}
+}
+</code>
+</pre>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <div class="animation">
+          <div class="second-animation__outer-arc">
+            <div class="second-animation__inner-arc">
+              <div class="second-animation__circle">
+                <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                  <path d="M0 0h24v24H0V0z" fill="none"/>
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <details>
+          <summary>Code for the second animation</summary>
+          <div class="code">
+            <span class="code__label">
+              <span role="note" class="code__note html">HTML</span>
+              <button>COPY</button>
+            </span>
+<pre>
+<code class="language-html">&lt;div class="second-animation__outer-arc"&gt;
+  &lt;div class="second-animation__inner-arc"&gt;
+    &lt;div class="second-animation__circle"&gt;
+      &lt;svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"&gt;
+        &lt;path d="M0 0h24v24H0V0z" fill="none"/&gt;
+        &lt;path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+          </div>
+          <div class="code">
+            <span class="code__label">
+              <span role="note" class="code__note css">CSS</span>
+              <button>COPY</button>
+            </span>
+<pre>
+<code class="language-css">.second-animation__outer-arc {
+  display: inherit;
+  margin: auto;
+  width: 6rem;
+  height: 6rem;
+  border: 1rem solid rgba(142, 69, 133, 0.2);
+  border-radius: 50%;
+  animation: secondAnimationOuterArc 2s linear infinite;
+}
+
+@keyframes secondAnimationOuterArc {
+  0%{ border-color: rgba(142, 69, 133, 0);}
+  100%{ border-color: rgba(142, 69, 133, 0.2);}
+}
+
+.second-animation__inner-arc {
+  display: inherit;
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+  border: 1rem solid rgba(142, 69, 133, 0.55);
+  border-radius: 50%;
+  animation: secondAnimationInnerArc 2s linear infinite;
+}
+
+@keyframes secondAnimationInnerArc {
+  0%{ border-color: rgba(142, 69, 133, 0);}
+  50%{ border-color: rgba(142, 69, 133, 0.2);}
+  100%{ border-color: rgba(142, 69, 133, 0.55);}
+}
+
+.second-animation__circle {
+  display: inherit;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(142, 69, 133, 1);
+}
+
+.second-animation__circle svg {
+  fill: #fff;
+  margin: auto;
+  animation: secondAnimationSVG 2s linear infinite;
+}
+
+@keyframes secondAnimationSVG {
+  0% { transform: scale(1);}
+  50% { transform: scale(0.5);}
+  100% { transform: scale(1);}
+}
+</code>
+</pre>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <div class="animation">
+          <div class="third-animation__outer-arc">
+            <div class="third-animation__inner-arc">
+              <div class="third-animation__circle">
+                <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                  <path id="top" d="M0 0h24v24H0V0z" fill="none"/>
+                  <path id="bottom" d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 
+                  1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 
+                  2.69-6 6-6zm6.76 1.74 L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69
+                  6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <details>
+          <summary>Code for the third animation</summary>
+          <div class="code">
+            <span class="code__label">
+              <span role="note" class="code__note html">HTML</span>
+              <button>COPY</button>
+            </span>
+<pre>
+<code class="language-html">&lt;div class="animation"&gt;
+  &lt;div class="third-animation__outer-arc"&gt;
+    &lt;div class="third-animation__inner-arc"&gt;
+      &lt;div class="third-animation__circle"&gt;
+        &lt;svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"&gt;
+          &lt;path id="top" d="M0 0h24v24H0V0z" fill="none"/&gt;
+          &lt;path id="bottom" d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 
+          1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 
+          2.69-6 6-6zm6.76 1.74 L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69
+          6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"/&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+          </div>
+          <div class="code">
+            <span class="code__label">
+              <span role="note" class="code__note css">CSS</span>
+              <button>COPY</button>
+            </span>
+<pre>
+<code class="language-css">.third-animation__outer-arc {
+  display: inherit;
+  margin: auto;
+  width: 6rem;
+  height: 6rem;
+  border: 1rem solid rgba(255, 128, 0, 0.2);
+  border-radius: 50%;
+  animation: thirdAnimationOuterArc 2s linear infinite;
+}
+
+@keyframes thirdAnimationOuterArc {
+  0%{ border-color: rgba(255, 128, 0, 0);}
+  100%{ border-color: rgba(255, 128, 0, 0.2);}
+}
+
+.third-animation__inner-arc {
+  display: inherit;
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+  border: 1rem solid rgba(255, 128, 0, 0.55);
+  border-radius: 50%;
+  animation: thirdAnimationInnerArc 2s linear infinite;
+}
+
+@keyframes thirdAnimationInnerArc {
+  0%{ border-color: rgba(255, 128, 0, 0);}
+  50%{ border-color: rgba(255, 128, 0, 0.2);}
+  100%{ border-color: rgba(255, 128, 0, 0.55);}
+}
+
+.third-animation__circle {
+  display: inherit;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 128, 0, 1);
+}
+
+.third-animation__circle svg {
+  fill: #fff;
+  margin: auto;
+  animation: thirdAnimationSVG 1s linear infinite;
+}
+
+@keyframes thirdAnimationSVG {
+  0% { transform: rotate(0deg);}
+  50% { transform: rotate(180deg);}
+  100% { transform: rotate(360deg);}
+}
+</code>
+</pre>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <div class="animation">
+          <div class="fourth-animation__bigger-circle"></div>
+            <div class="fourth-animation__icon">
               <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                 <path d="M0 0h24v24H0V0z" fill="none"/>
-                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                <circle cx="12" cy="19" r="2"/>
+                <path d="M12 3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2s2-.9
+                2-2V5c0-1.1-.9-2-2-2z"/>
               </svg>
             </div>
-          </div>
+            <div class="fourth-animation__smaller-circle"></div>
         </div>
       </div>
-  
-      <div class="animation third-animation">
-        <div class="third-animation__outer-arc">
-          <div class="third-animation__inner-arc">
-            <div class="third-animation__circle">
-              <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-                <path id="top" d="M0 0h24v24H0V0z" fill="none"/>
-                <path id="bottom" d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 
-                1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 
-                2.69-6 6-6zm6.76 1.74 L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69
-                6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div class="animation fourth-animation">
-        <div class="fourth-animation__bigger-circle"></div>
-          <div class="fourth-animation__icon">
-            <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-              <path d="M0 0h24v24H0V0z" fill="none"/>
-              <circle cx="12" cy="19" r="2"/>
-              <path d="M12 3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2s2-.9
-              2-2V5c0-1.1-.9-2-2-2z"/>
-            </svg>
-          </div>
-          <div class="fourth-animation__smaller-circle"></div>
-      </div>
-    </div>
 
-  </main>
+        <details>
+          <summary>Code for the fourth animation</summary>
+          <div class="code">
+            <span class="code__label">
+              <span role="note" class="code__note html">HTML</span>
+              <button>COPY</button>
+            </span>
+<pre>
+<code class="language-html">&lt;div class="animation fourth-animation"&gt;
+  &lt;div class="fourth-animation__bigger-circle"&gt;&lt;/div&gt;
+    &lt;div class="fourth-animation__icon"&gt;
+      &lt;svg height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"&gt;
+        &lt;path d="M0 0h24v24H0V0z" fill="none"/&gt;
+        &lt;circle cx="12" cy="19" r="2"/&gt;
+        &lt;path d="M12 3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2s2-.9
+        2-2V5c0-1.1-.9-2-2-2z"/&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class="fourth-animation__smaller-circle"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+          </div>
+          <div class="code">
+            <span class="code__label">
+              <span role="note" class="code__note css">CSS</span>
+              <button>COPY</button>
+            </span>
+<pre>
+<code class="language-css">.fourth-animation__bigger-circle  {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.10);
+  animation: fourthAnimationBiggerCircle 2s linear infinite;
+}
+
+@keyframes fourthAnimationBiggerCircle {
+  0% { transform: scale(1);}
+  50% { transform: scale(0.8);}
+  100% { transform: scale(1);}
+}
+
+.fourth-animation__smaller-circle  {
+  position: absolute;
+  right: 15%;
+  bottom: 15%;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.10);
+  animation: fourthAnimationSmallerCircle 2s linear infinite;
+}
+
+@keyframes fourthAnimationSmallerCircle {
+  0% { transform: scale(0.8);}
+  50% { transform: scale(1);}
+  100% { transform: scale(0.8);}
+}
+
+.fourth-animation__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 0, 0, 0.7);
+  border-radius: 50%;
+  z-index: 2;
+  animation: fourthAnimationIcon 1s linear infinite;
+}
+
+@keyframes fourthAnimationIcon {
+  0%{ background-color: rgba(255, 0, 0, 0.2);}
+  100%{ background-color: rgba(255, 0, 0, 0.7);}
+}
+
+.fourth-animation__icon svg {
+  margin: auto;
+  fill: #fff;
+}
+</code>
+</pre>
+          </div>
+        </details>
+      </li>
+    </ul>
+  </section>
+
+  <script src="/prism.js"></script>
 </body>
 </html>

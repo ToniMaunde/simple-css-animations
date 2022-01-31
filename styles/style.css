@@ -1,3 +1,15 @@
+/* Variables */
+:root {
+  --clr-background: #FDFFFC;
+  --clr-primary: #011627;
+  --clr-secondary: #FFA500;
+  --clr-tertiary: #008080;
+  --clr-quaternary: #FF0D9B;
+
+  --page-padding: 1.5rem;
+}
+
+/* Resets */
 * {
   box-sizing: border-box;
 }
@@ -11,10 +23,9 @@ html {
 }
 
 body {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+  font-family: "Titillium Web", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: teal;
-  background-color: papayawhip;
+  background-color: var(--clr-background);
   font-weight: 400;
   line-height: 1.75;
 }
@@ -32,17 +43,29 @@ main {
   flex-wrap: wrap;
 }
 
-h1 {
-  width: 100%;
-  margin-bottom: 1rem;
-  text-align: center;
+a {
+  text-decoration: none;
 }
 
-h4 {
-  width: 100%;
-  text-align: center;
+ul {
+  list-style: none;
 }
 
+summary {
+  font-size: 1.3125rem;
+  font-weight: 600;
+  color: var(--clr-tertiary);
+}
+
+pre[class*=language-] {
+  padding: 0.8rem 0.8rem 0 0.8rem;
+  margin: 0;
+  overflow: auto;
+  border-radius: 5px;
+  background-color: var(--clr-primary);
+}
+
+/*  Layout */
 .container {
   width: 100%;
   height: 100%;
@@ -52,22 +75,165 @@ h4 {
   justify-content: space-evenly;
 }
 
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: var(--page-padding);
+  background-color: var(--clr-primary);
+}
+
+.navbar p {
+  color: var(--clr-quaternary);
+}
+
+.navbar a {
+  margin-left: auto;
+  display: none;
+}
+
+.navbar img {
+  margin-left: auto;
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+  padding: 0 var(--page-padding);
+}
+
+.hero__heading {
+  font-size: 2.5rem;
+  color: var(--clr-primary)
+}
+
+.hero__supporting-text {
+  font-size: 1.125rem;
+  color: #424141;
+  font-weight: normal;
+}
+
+.hero__call-to-action {
+  margin-top: 1rem;
+  padding: 1rem 1.4rem;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: var(--clr-primary);
+  font-size: 1.125rem;
+  color: var(--clr-quaternary);
+  font-weight: 500;
+}
+
+.section {
+  padding: 0 var(--page-padding);
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__title {
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+  color: var(--clr-primary);
+}
+
+.section__content {
+  font-size: 1.125rem;
+  font-weight: normal;
+  color: var(--clr-primary)
+}
+
+.section__content a {
+  color: var(--clr-tertiary);
+  font-weight: 500;
+}
+
+.left-curly-brace {
+  color: var(--clr-secondary);
+}
+
+.right-curly-brace {
+  color: var(--clr-quaternary);
+}
+
+.animation-list .section__content {
+  margin-bottom: 2rem;
+}
+
+.animation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.animation-list__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.animation-list__list li {
+  margin-bottom: 3rem;
+}
+
+.code {
+  width: 100%;
+  height: auto;
+  background-color: var(--clr-primary);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.code__label {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.code__note,
+.code__label button {
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Titillium Web", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.code__note.html {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary)
+}
+
+.code__note.css {
+  background-color: var(--clr-quaternary);
+  color: var(--clr-background);
+}
+
+.code__label button {
+  margin-left: auto;
+}
+
+/* Animations */
 .animation {
   display: flex;
   width: 8rem;
   height: 8rem;
-  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
   border-radius: 10px;
   filter: drop-shadow(0 0 1rem white);
-  background-color: papayawhip;
+  background-color: var(--clr-primary);
 }
 
-.first-animation__base {
+.first-animation {
   margin: auto;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  border: 1rem solid cadetblue;
+  border: 1rem solid rgba(142, 69, 133, 0.55);
   border-left-color: papayawhip;
   animation: firstAnimation 1s linear infinite;
 }
