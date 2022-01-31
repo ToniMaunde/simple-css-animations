@@ -84,6 +84,7 @@ pre[class*=language-] {
 
 .navbar p {
   color: var(--clr-quaternary);
+  font-size: 1.3125rem;
 }
 
 .navbar a {
