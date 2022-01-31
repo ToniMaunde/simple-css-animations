@@ -85,11 +85,15 @@ pre[class*=language-] {
 .navbar p {
   color: var(--clr-quaternary);
   font-size: 1.3125rem;
+  font-weight: 500;
+}
+
+.navbar a[role=button] {
+  display: none;
 }
 
 .navbar a {
   margin-left: auto;
-  display: none;
 }
 
 .navbar img {
