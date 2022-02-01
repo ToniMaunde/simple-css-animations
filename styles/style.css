@@ -68,7 +68,7 @@ pre[class*=language-] {
   margin: 0;
   overflow: auto;
   border-radius: 5px;
-  background-color: #031c30;
+  background-color: var(--clr-primary);
 }
 
 code[class*=language-] {
