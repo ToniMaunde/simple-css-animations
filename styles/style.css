@@ -60,6 +60,7 @@ summary {
   font-size: 1.3125rem;
   font-weight: 600;
   color: var(--clr-tertiary);
+  cursor: pointer;
 }
 
 pre[class*=language-] {
@@ -67,7 +68,7 @@ pre[class*=language-] {
   margin: 0;
   overflow: auto;
   border-radius: 5px;
-  background-color: var(--clr-primary);
+  background-color: #031c30;
 }
 
 code[class*=language-] {
